@@ -30,6 +30,8 @@ gem 'bcrypt', '~> 3.1.7'
 
 gem 'puma'
 
+
+
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'font-awesome-rails'
 gem 'money-rails'
@@ -59,4 +61,8 @@ end
 group :production do
   gem 'newrelic_rpm'
   gem 'rails_12factor'
+end
+
+group :development, :test do
+  gem 'rspec-rails', '~> 3.5'
 end
