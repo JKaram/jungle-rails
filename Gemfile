@@ -66,3 +66,9 @@ end
 group :development, :test do
   gem 'rspec-rails', '~> 3.5'
 end
+
+group :test do
+  gem 'capybara'
+  gem 'poltergeist'
+  gem 'database_cleaner'
+end
